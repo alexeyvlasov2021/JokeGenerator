@@ -1,0 +1,50 @@
+body {
+    /* background-color: aquamarine; */
+    background-image: url('/images/balune.jpg');
+    background-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 45vh; */
+    /* background-color: rgb(44, 173, 37);
+    width: 350px; */
+    
+}
+
+p {
+    margin: 20px;
+}
+
+.item{
+    width: 150px;
+   
+}
+
+select.item{
+    margin-bottom: 7px;
+}
+
+input.item {
+    width: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 75vh;
+    width: 45vw;
+    background-color: rgba(245, 238, 238, 0.953);
+    border-radius: 25px;
+}
+
+

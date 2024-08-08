@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <div class="container">
+        <form action="/joke" method="post">
+            <!-- <div class="item"> -->
+                <label for="category" class="item">Choose joke category:</label>
+                <select name="category" class="item">
+                    <option value="Any">Any</option>
+                    <option value="Misc">Misc</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Dark">Dark</option>
+                    <option value="Pun">Pun</option>
+                    <option value="Spooky">Spooky</option>
+                    <option value="Christmas">Christmas</option>
+                </select>
+            <!-- </div> -->
+            
+            <!-- <div class="item"> -->
+                <label for="language" class="item">Choose joke language:</label>
+                <select name="language" class="item">
+                    <option value="cs">cs</option>
+                    <option value="de">de</option>
+                    <option value="en">en</option>
+                    <option value="es">es</option>
+                    <option value="fr">fr</option>
+                    <option value="pt">pt</option>
+                </select>
+            <!-- </div> -->
+            
+            <!-- <div class="item"> -->
+                <input type="submit" class="item">
+            <!-- </div> -->
+            
+        </form>
+    
+
+    
+    <% if(locals.data) {%>
+        <% if(data.error === false) {%>
+            <p><%= data.joke %></p>
+        <% } else {%>
+            <p><%= data.message %></p>
+        <% } %>
+
+    <% }%>
+    </div>
+</body>
+</html>
